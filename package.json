@@ -1,0 +1,28 @@
+{
+  "name": "episode6",
+  "version": "1.0.0",
+  "description": "Eploring the world",
+  "main": "App.js",
+  "scripts": {
+    "start": "npx parcel index.html",
+    "test": "jest"
+  },
+  "author": "subham gope",
+  "license": "ISC",
+  "browserlists": [
+    "last 2 version"
+  ],
+  "devDependencies": {
+    "parcel": "^2.9.3",
+    "postcss": "^8.4.27",
+    "process": "^0.11.10",
+    "tailwindcss": "^3.3.3"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.9.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.1.2",
+    "react-router-dom": "^6.14.1"
+  }
+}
