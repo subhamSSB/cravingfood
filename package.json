@@ -2,9 +2,10 @@
   "name": "episode6",
   "version": "1.0.0",
   "description": "Eploring the world",
-  "main": "App.js",
+  
   "scripts": {
     "start": "npx parcel index.html",
+    "build": "parcel build index.html",
     "test": "jest"
   },
   "author": "subham gope",
