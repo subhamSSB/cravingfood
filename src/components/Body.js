@@ -1,10 +1,11 @@
 import Restaurantcard, { withPromotedLabel } from "./Restaurantcard";
-import resList from "../utils/mockData";
+import resList, { PROXY_URL, SWIGGY_API } from "../utils/mockData";
 import { useEffect, useState, useContext } from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import UserContext from "../utils/UserContext";
 import NoData from "./NoData";
+import fetch from 'cross-fetch';
 const Body = () => {
   const [listOfRestaurant, setListOfRestraunt] = useState([]);
   const [filteredRestaurant, setFilteredRestaurant] = useState([]);
@@ -20,7 +21,7 @@ const Body = () => {
 
   const fetchData = async () => {
     const data = await fetch(
-      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=20.275969084678962&lng=85.7945879548788&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
+      PROXY_URL+   encodeURIComponent(SWIGGY_API)
     );
 
     const json = await data.json();

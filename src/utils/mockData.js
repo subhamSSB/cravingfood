@@ -1712,4 +1712,10 @@ const resList = [
     }
     ];
 
+
+
+export const SWIGGY_API = "https://www.swiggy.com/dapi/restaurants/list/v5?lat=20.275969084678962&lng=85.7945879548788&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING";
+
+export const PROXY_URL = 'https://api.allorigins.win/raw?url=';
+
     export default resList;
