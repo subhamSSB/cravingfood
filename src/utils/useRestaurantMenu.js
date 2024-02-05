@@ -9,11 +9,11 @@ const useRestaurantMenu = (resId) => {
     },[]);
 
     const fetchData = async () => {
-        const data = await fetch(PROXY_URL + MENU_URL+resId+'&catalog_qa=undefined&submitAction=ENTER');
+        const data = await fetch(PROXY_URL + encodeURIComponent(MENU_URL+resId+'&catalog_qa=undefined&submitAction=ENTER'));
         const json = await data.json();
 
         setResInfo(json.data);
-
+        console.log(json.data)
 
     }
 
